@@ -11,6 +11,10 @@ module.exports = {
         transWhite: 'hsla(0, 0%, 100%, 0.75)',
         transWhite2: 'hsla(0, 0%, 100%, 0.6)',        
       },
+      fontFamily: {
+        lexend: ['"Lexend Deca"', ...defaultTheme.fontFamily.sans],
+        inter: ['"Lexend Deca"', ...defaultTheme.fontFamily.sans]
+      },
     },
   },
   plugins: [],
