@@ -2,3 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
+picture {
+	position: relative;
+	isolation: isolate;
+}
+
+picture::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 1;	
+	opacity: .7;	
+	background: hsl(277, 99%, 55%, .55);
+	background: hsl(277, 100%, 61%, .84);
+}

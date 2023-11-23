@@ -534,9 +534,17 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.relative {
+  position: relative;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mt-12 {
+  margin-top: 3rem;
 }
 
 .flex {
@@ -612,8 +620,8 @@ video {
   overflow: hidden;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .bg-darkDesaturatedBlue {
@@ -630,8 +638,25 @@ video {
   padding: 1.5rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.font-inter {
+  font-family: Inter, sans-serif;
+}
+
+.font-lexend {
+  font-family: Lexend Deca, sans-serif;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-2xl {
@@ -648,8 +673,45 @@ video {
   line-height: 1.25rem;
 }
 
+.text-\[1px\] {
+  font-size: 1px;
+}
+
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-\[0\.8rem\] {
+  font-size: 0.8rem;
+}
+
+.text-\[0\.7rem\] {
+  font-size: 0.7rem;
+}
+
+.text-\[\.7rem\] {
+  font-size: .7rem;
+}
+
+.text-\[\.95rem\] {
+  font-size: .95rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-extralight {
+  font-weight: 200;
 }
 
 .uppercase {
@@ -672,6 +734,49 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\.rem\] {
+  color: .rem;
+}
+
+.text-\[\.\] {
+  color: .;
+}
+
+.text-\[0\.rem\] {
+  color: 0.rem;
+}
+
+.text-\[\.8ren\] {
+  color: .8ren;
+}
+
+.text-\[\.m-56ren\] {
+  color: .m-56ren;
+}
+
+.text-\[\.8re\] {
+  color: .8re;
+}
+
+picture {
+  position: relative;
+  isolation: isolate;
+}
+
+picture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  opacity: .7;
+  background: hsl(277, 99%, 55%, .55);
+  background: hsl(277, 100%, 61%, .84);
 }
 
 @media (min-width: 768px) {

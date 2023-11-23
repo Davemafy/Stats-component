@@ -1,60 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 66%); }
-  </style>
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Frontend Mentor | Stats preview card component</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+	<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+	<style>
+		.attribution { font-size: 11px;
+		text-align: center;
+		}
+		.attribution a { color: hsl(228, 45%, 66%);
+		}
+	</style>
 </head>
-<body style="font-family: 'Inter', sans-serif;"   class=" bg-veryDarkBlue text-white font-">
-    <main class="p-6 grid place-items-center min-h-[100dvh] overflow-auto">
-        <div class="card text-white bg-darkDesaturatedBlue flex flex-col mx-auto w-fit max-w-[55ch] lg:max-w-fit text-center overflow-hidden lg:text-left rounded lg:grid lg:grid-col-1/2  lg:grid-flow-col">
-            <picture class="lg:col-start-2 ">
-                <source media="(min-width: 1024px)" srcset="images/image-header-desktop.jpg">
-                <img src="images/image-header-mobile.jpg" class="lg:max-h-[400px]" alt="card image">
-              </picture>
-                <!-- Card body -->
-                <section class="flex flex-col justify-center gap-8 p-6 lg:gap-12 md:p-8 lg:p-12 lg:py-0  max-w-[55ch] mx-auto">
-                <!-- header -->
-                <header class="flex flex-col gap-8" >
-                  <h1 style="font-family: 'Lexend Deca', sans-serif;" class="text-2xl mx-auto  font-bold  max-w-[231px] md:max-w-[100%] lg:mx-0">
-                    Get <span class="text-softViolet">insights</span> that help your business grow.
-                  </h1>
-                  <p class="text-transWhite">
-                    Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-                    experience, and overall efficiency.
-                  </p>
-                </header>
-                <!-- Ranking Section -->
-                <div class="w-full flex flex-col items-center lg:flex-row gap-4 lg:gap-12">
-                  <div class="flex flex-col gap-0 w-1/3">
-                    <h2 class="text-2xl font-bold">10k+</h2>
-                    <p class="text-light text-[.8rem] text-transWhite2 uppercase">companies</p>
-                  </div>
-                  <div class="flex flex-col gap-0 w-1/3">
-                    <h2 class="text-2xl font-bold">314</h2>
-                    <p class="text-light text-sm text-[.8rem] text-transWhite2 uppercase">templates</p>
-                  </div>
-                  <div class="flex flex-col gap-0 w-1/3">
-                    <h2 class="text-2xl font-bold">12m+</h2>
-                    <p class="text-light text-sm text-[.8rem] text-transWhite2 uppercase"> queries</p>
-                  </div>
-                </div>
-              </section>
-        </div>
-        <div class="attribution p-6">
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-          Coded by <a href="#">Davemafy </a>.
-        </div> 
-    </main>
-    <script src="load.js"></script>
+<body class=" relative bg-veryDarkBlue text-white font-inter">
+	<main class="p-6 py-10 grid place-items-center min-h-[100dvh] overflow-auto">
+		<div class="card text-white bg-darkDesaturatedBlue flex flex-col mx-auto w-fit max-w-[55ch] lg:max-w-fit text-center overflow-hidden lg:text-left rounded-lg lg:grid lg:grid-col-1/2  lg:grid-flow-col">
+			<picture class="lg:a-start-2 ">
+				<source media="(min-width: 1024px)" srcset="images/image-header-desktop.jpg">
+				<img src="images/image-header-mobile.jpg" class="lg:max-h-[400px]" alt="card image">
+			</picture>
+			<!-- Card body -->
+			<section class="flex flex-col justify-center gap-8 p-6 lg:gap-12 md:p-8 lg:p-12 lg:py-0  max-w-[55ch] mx-auto">
+				<!-- header -->
+				<header class="flex flex-col gap-8">
+					<h1 class="text-2xl mx-auto  font-bold max-w-[231px] md:max-w-[100%] lg:mx-0">
+						Get
+						<span class="text-softViolet">
+							insights
+						</span>
+						that help your business grow.
+					</h1>
+					<p class="text-transWhitel font-light font-inter">
+						Discover the benefits of data analytics and make better decisions regarding revenue, customer
+						experience, and overall efficiency.
+					</p>
+				</header>
+				<!-- Ranking Section -->
+				<div class="w-full flex flex-col items-center lg:flex-row gap-4 lg:gap-12">
+					<div class="flex flex-col gap-0 w-1/3">
+						<h2 class="text-2xl font-bold">
+							10k+
+						</h2>
+						<p class="font-light font-lexend text-[.7rem] text-transWhite2 uppercase">
+							companies
+						</p>
+					</div>
+					<div class="flex flex-col gap-0 w-1/3">
+						<h2 class="text-2xl font-bold">
+							314
+						</h2>
+						<p class="font-light font-lexend text-sm text-[.7rem] text-transWhite2 uppercase">
+							templates
+						</p>
+					</div>
+					<div class="flex flex-col gap-0 w-1/3">
+						<h2 class="text-2xl font-bold">
+							12m+
+						</h2>
+						<p class="font-lexend text-sm text-[.7rem] text-transWhite2 uppercase">
+							queries
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="attribution mt-12  p-6">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+			Coded by <a href="#">Davemafy </a>.
+		</div>
+	</main>
+	<script type="module" src="load.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["../*.html"],
+  content: ["./*.html"],
   theme: {
     extend: {
       colors: {
@@ -12,8 +12,8 @@ module.exports = {
         transWhite2: 'hsla(0, 0%, 100%, 0.6)',        
       },
       fontFamily: {
-        lexend: ['"Lexend Deca"', ...defaultTheme.fontFamily.sans],
-        inter: ['"Lexend Deca"', ...defaultTheme.fontFamily.sans]
+        lexend: ['Lexend Deca', 'sans-serif'],
+        inter: ['Inter',  'sans-serif']
       },
     },
   },
